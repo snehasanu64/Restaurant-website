@@ -1,7 +1,7 @@
 :root {
-    --primary: #800000; /* Deep Maroon */
-    --accent: #d4af37;  /* Gold */
-    --bg-body: #fdf8f0; /* Warm Cream */
+    --primary: #800000; 
+    --accent: #d4af37;  
+    --bg-body: #fdf8f0; 
     --bg-card: #ffffff;
     --text-dark: #2c2c2c;
     --text-muted: #666;
@@ -30,7 +30,6 @@ h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
 
-/* --- Custom Scrollbar --- */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -42,7 +41,6 @@ h1, h2, h3 {
     border-radius: 10px;
 }
 
-/* --- Navbar --- */
 .navbar {
     background: rgba(253, 248, 240, 0.85);
     padding: 1.5rem 0;
@@ -73,7 +71,7 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
     gap: 20px;
-    font-size: 45px; /* Increased from 36px */
+    font-size: 45px; 
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     color: var(--primary);
@@ -121,7 +119,6 @@ h1, h2, h3 {
     box-shadow: 0 8px 20px rgba(128, 0, 0, 0.2);
 }
 
-/* --- Section Styling --- */
 .section {
     padding: 8rem 0;
 }
@@ -147,7 +144,6 @@ h1, h2, h3 {
     font-weight: 900;
 }
 
-/* --- Hero --- */
 .hero {
     height: 100vh;
     display: flex;
@@ -202,7 +198,6 @@ h1, h2, h3 {
     letter-spacing: 1px;
 }
 
-/* --- Highlights --- */
 .highlights {
     background: var(--bg-body);
     background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
@@ -242,7 +237,6 @@ h1, h2, h3 {
     color: #000000;
 }
 
-/* --- Menu --- */
 .menu {
     background: #fdf8f0;
     background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
@@ -304,7 +298,6 @@ h1, h2, h3 {
     flex-grow: 1;
 }
 
-/* --- Add to Cart / Qty Styles --- */
 .add-btn {
     width: 100%;
     background: var(--text-dark);
@@ -360,7 +353,6 @@ h1, h2, h3 {
     text-align: center;
 }
 
-/* --- Order / Cart Section --- */
 .order-card {
     background: var(--bg-card);
     border-radius: 40px;
@@ -431,15 +423,12 @@ h1, h2, h3 {
     cursor: not-allowed;
 }
 
-/* --- Footer --- */
 footer {
     background: var(--bg-dark);
     color: white;
     padding: 5rem 0;
     text-align: center;
 }
-
-/* --- Responsive --- */
 @media (max-width: 768px) {
     .nav-links { display: none; }
     .hero-content h1 { font-size: 3.5rem; }
