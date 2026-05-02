@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donne Biryani House | Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <img src="logo .png" alt="Biryani House Logo">
+                <span>Biryani House</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section">
+
+        <div class="container">
+            <h2 class="section-title"><span>Handpicked for you</span>The Signature Menu</h2>
+            <div class="menu-grid">
+                
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://i.ibb.co/gLnBnNQC/ck.jpg" alt="Chicken Biryani"></div>
+                    <div class="menu-content">
+                        <h3 class="menu-name">Chicken Donne Biryani</h3>
+                        <div class="menu-price">₹205</div>
+                        <p class="menu-desc">Aromatic Jeeraga Samba rice with tender chicken chunks and spicy green masala.</p>
+                        <button class="add-btn" onclick="updateQty('Donne Chicken Biryani', 1, 205)"><span>🛒</span> Add to Cart</button>
+                        <div class="qty-control-menu">
+                            <button class="qty-btn-menu" onclick="updateQty('Donne Chicken Biryani', -1, 205)">-</button>
+                            <span class="qty-display-menu" data-item="Donne Chicken Biryani">0</span>
+                            <button class="qty-btn-menu" onclick="updateQty('Donne Chicken Biryani', 1, 205)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://i.ibb.co/1GcbgQTq/mutton.jpg" alt="Mutton Biryani"></div>
+                    <div class="menu-content">
+                        <h3 class="menu-name">Mutton Donne Biryani</h3>
+                        <div class="menu-price">₹350</div>
+                        <p class="menu-desc">Slow-cooked succulent mutton fall-off-the-bone tender, infused with rich local spices.</p>
+                        <button class="add-btn" onclick="updateQty('Donne Mutton Biryani', 1, 350)"><span>🛒</span> Add to Cart</button>
+                        <div class="qty-control-menu">
+                            <button class="qty-btn-menu" onclick="updateQty('Donne Mutton Biryani', -1, 350)">-</button>
+                            <span class="qty-display-menu" data-item="Donne Mutton Biryani">0</span>
+                            <button class="qty-btn-menu" onclick="updateQty('Donne Mutton Biryani', 1, 350)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://i.ibb.co/XxWQbKHd/prawn.jpg" alt="Prawn Biryani"></div>
+                    <div class="menu-content">
+                        <h3 class="menu-name">Prawn Donne Biryani</h3>
+                        <div class="menu-price">₹420</div>
+                        <p class="menu-desc">Flavorful coastal prawns tossed in a fiery masala blend and served with aromatic rice.</p>
+                        <button class="add-btn" onclick="updateQty('Donne Prawn Biryani', 1, 420)"><span>🛒</span> Add to Cart</button>
+                        <div class="qty-control-menu">
+                            <button class="qty-btn-menu" onclick="updateQty('Donne Prawn Biryani', -1, 420)">-</button>
+                            <span class="qty-display-menu" data-item="Donne Prawn Biryani">0</span>
+                            <button class="qty-btn-menu" onclick="updateQty('Donne Prawn Biryani', 1, 420)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://i.ibb.co/kFxnbs1/boneless.jpg" alt="Boneless"></div>
+                    <div class="menu-content">
+                        <h3 class="menu-name">Boneless Chicken Biryani</h3>
+                        <div class="menu-price">₹240</div>
+                        <p class="menu-desc">Perfectly seasoned boneless chicken chunks layered with extra spicy biryani rice.</p>
+                        <button class="add-btn" onclick="updateQty('Chicken Boneless Biryani', 1, 240)"><span>🛒</span> Add to Cart</button>
+                        <div class="qty-control-menu">
+                            <button class="qty-btn-menu" onclick="updateQty('Chicken Boneless Biryani', -1, 240)">-</button>
+                            <span class="qty-display-menu" data-item="Chicken Boneless Biryani">0</span>
+                            <button class="qty-btn-menu" onclick="updateQty('Chicken Boneless Biryani', 1, 240)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://i.ibb.co/n84xqhNv/kb.jpg" alt="Kebab"></div>
+                    <div class="menu-content">
+                        <h3 class="menu-name">Kshatriya Kebab Biryani</h3>
+                        <div class="menu-price">₹230</div>
+                        <p class="menu-desc">Our signature crispy chicken kebab served alongside fragrant biryani rice.</p>
+                        <button class="add-btn" onclick="updateQty('Kshatriya Kebab', 1, 230)"><span>🛒</span> Add to Cart</button>
+                        <div class="qty-control-menu">
+                            <button class="qty-btn-menu" onclick="updateQty('Kshatriya Kebab', -1, 230)">-</button>
+                            <span class="qty-display-menu" data-item="Kshatriya Kebab">0</span>
+                            <button class="qty-btn-menu" onclick="updateQty('Kshatriya Kebab', 1, 230)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://i.ibb.co/JWdGFVph/veg.jpg" alt="Veg Biryani"></div>
+                    <div class="menu-content">
+                        <h3 class="menu-name">Veg Donne Biryani</h3>
+                        <div class="menu-price">₹160</div>
+                        <p class="menu-desc">Healthy assortment of garden fresh vegetables cooked with our green heritage masala.</p>
+                        <button class="add-btn" onclick="updateQty('Donne Veg Biryani', 1, 160)"><span>🛒</span> Add to Cart</button>
+                        <div class="qty-control-menu">
+                            <button class="qty-btn-menu" onclick="updateQty('Donne Veg Biryani', -1, 160)">-</button>
+                            <span class="qty-display-menu" data-item="Donne Veg Biryani">0</span>
+                            <button class="qty-btn-menu" onclick="updateQty('Donne Veg Biryani', 1, 160)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://i.ibb.co/HDkc19WQ/mushroom.jpg" alt="Mushroom"></div>
+                    <div class="menu-content">
+                        <h3 class="menu-name">Mushroom Biryani</h3>
+                        <div class="menu-price">₹220</div>
+                        <p class="menu-desc">Meaty white button mushrooms marinated in aromatic herbs and slow cooked.</p>
+                        <button class="add-btn" onclick="updateQty('Donne Mushroom Biryani', 1, 220)"><span>🛒</span> Add to Cart</button>
+                        <div class="qty-control-menu">
+                            <button class="qty-btn-menu" onclick="updateQty('Donne Mushroom Biryani', -1, 220)">-</button>
+                            <span class="qty-display-menu" data-item="Donne Mushroom Biryani">0</span>
+                            <button class="qty-btn-menu" onclick="updateQty('Donne Mushroom Biryani', 1, 220)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://i.ibb.co/dJHn8C0P/fish.jpg" alt="Fish"></div>
+                    <div class="menu-content">
+                        <h3 class="menu-name">Fish Kabab Biryani</h3>
+                        <div class="menu-price">₹280</div>
+                        <p class="menu-desc">Spicy fish kebabs served with our signature aromatic biryani rice.</p>
+                        <button class="add-btn" onclick="updateQty('Donne Fish Kabab Biryani', 1, 280)"><span>🛒</span> Add to Cart</button>
+                        <div class="qty-control-menu">
+                            <button class="qty-btn-menu" onclick="updateQty('Donne Fish Kabab Biryani', -1, 280)">-</button>
+                            <span class="qty-display-menu" data-item="Donne Fish Kabab Biryani">0</span>
+                            <button class="qty-btn-menu" onclick="updateQty('Donne Fish Kabab Biryani', 1, 280)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://i.ibb.co/84r6vW5M/egg-biryani.jpg" alt="Egg"></div>
+                    <div class="menu-content">
+                        <h3 class="menu-name">Egg Biryani</h3>
+                        <div class="menu-price">₹170</div>
+                        <p class="menu-desc">Two boiled eggs perfectly spiced and nestled in fragrant herb-infused rice.</p>
+                        <button class="add-btn" onclick="updateQty('Donne Egg Biryani', 1, 170)"><span>🛒</span> Add to Cart</button>
+                        <div class="qty-control-menu">
+                            <button class="qty-btn-menu" onclick="updateQty('Donne Egg Biryani', -1, 170)">-</button>
+                            <span class="qty-display-menu" data-item="Donne Egg Biryani">0</span>
+                            <button class="qty-btn-menu" onclick="updateQty('Donne Egg Biryani', 1, 170)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://i.ibb.co/Zp20q4QD/tandoori.jpg" alt="Tandoori"></div>
+                    <div class="menu-content">
+                        <h3 class="menu-name">Chicken Tandoori</h3>
+                        <div class="menu-price">₹350</div>
+                        <p class="menu-desc">Classic yogurt-marinated chicken roasted in a clay oven for a smoky char.</p>
+                        <button class="add-btn" onclick="updateQty('Chicken Tandoori', 1, 350)"><span>🛒</span> Add to Cart</button>
+                        <div class="qty-control-menu">
+                            <button class="qty-btn-menu" onclick="updateQty('Chicken Tandoori', -1, 350)">-</button>
+                            <span class="qty-display-menu" data-item="Chicken Tandoori">0</span>
+                            <button class="qty-btn-menu" onclick="updateQty('Chicken Tandoori', 1, 350)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://i.ibb.co/MkKxMF8P/guntur.jpg" alt="Guntur Chicken"></div>
+                    <div class="menu-content">
+                        <h3 class="menu-name">Guntur Chicken</h3>
+                        <div class="menu-price">₹200</div>
+                        <p class="menu-desc">Fiery Andhra-style chicken stir-fry with Guntur chillies and curry leaves.</p>
+                        <button class="add-btn" onclick="updateQty('Guntur Chicken', 1, 200)"><span>🛒</span> Add to Cart</button>
+                        <div class="qty-control-menu">
+                            <button class="qty-btn-menu" onclick="updateQty('Guntur Chicken', -1, 200)">-</button>
+                            <span class="qty-display-menu" data-item="Guntur Chicken">0</span>
+                            <button class="qty-btn-menu" onclick="updateQty('Guntur Chicken', 1, 200)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img"><img src="https://i.ibb.co/PZvwcSym/pepper.jpg" alt="Mutton Pepper"></div>
+                    <div class="menu-content">
+                        <h3 class="menu-name">Mutton Pepper Dry</h3>
+                        <div class="menu-price">₹300</div>
+                        <p class="menu-desc">Succulent mutton pieces tossed with crushed black pepper and traditional spices.</p>
+                        <button class="add-btn" onclick="updateQty('Mutton Pepper Dry', 1, 300)"><span>🛒</span> Add to Cart</button>
+                        <div class="qty-control-menu">
+                            <button class="qty-btn-menu" onclick="updateQty('Mutton Pepper Dry', -1, 300)">-</button>
+                            <span class="qty-display-menu" data-item="Mutton Pepper Dry">0</span>
+                            <button class="qty-btn-menu" onclick="updateQty('Mutton Pepper Dry', 1, 300)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 5rem;">
+                <a href="order.html" class="cta-btn">View My Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2 style="color: var(--primary); margin-bottom: 1rem;">Biryani House</h2>
+            <p style="margin-bottom: 1.5rem;">Authentic Bangalore Street Food | 25+ Years Legacy | Served in Traditional Leaf Donne</p>
+            <p>© 2026 Chickpet Donne Biryani House | Jayanagar 9th Block, Bengaluru</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
